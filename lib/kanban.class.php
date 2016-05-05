@@ -1,7 +1,7 @@
 <?php
 class Kanban {
 
-    const KANBAN_PATH     = "/mnt/array1/share/kanban/";
+    const KANBAN_PATH     = "../users/";
     const MEMO_FILE_NAME  = "memo";
     const STYLE_FILE_NAME = "style";
 
