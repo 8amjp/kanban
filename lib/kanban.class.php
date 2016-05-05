@@ -1,7 +1,7 @@
 <?php
 class Kanban {
 
-    const BASE_DIR_NAME   = "/mnt/array1/share/kanban/";
+    const KANBAN_PATH     = "/mnt/array1/share/kanban/";
     const MEMO_FILE_NAME  = "memo";
     const STYLE_FILE_NAME = "style";
 
@@ -20,9 +20,9 @@ class Kanban {
         $tasks = array();
         foreach($this->patterns as $status => $pattern) {
             $tasks[$status] = array();
-            $glob = glob( self::BASE_DIR_NAME.$pattern, GLOB_ONLYDIR );
+            $glob = glob( self::KANBAN_PATH.$pattern, GLOB_ONLYDIR );
             foreach($glob as $path) {
-                $relativepath = str_replace( self::BASE_DIR_NAME, "", $path );
+                $relativepath = str_replace( self::KANBAN_PATH, "", $path );
                 $level = substr_count( $relativepath, "/" );
                 switch ( $level ) {
                     case 2:

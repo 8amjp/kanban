@@ -10,6 +10,10 @@ NAS(Network Attached Storage)上のディレクトリ・ファイルをかんば
 
 ## Install
 
+* ダウンロードしたZIPファイルを解凍し、NAS上に構築したWebサーバのドキュメントルート以下の任意の場所に配置します。
+* `lib/kanban.class.php`を開き、`KANBAN_PATH`の値を修正します。
+ - 例えば、"/mnt/array1/share/kanban/"となります。
+
 ## Usage
 
 * 'Users'にある自分のフォルダ内に '#ToDo' '#Doing' '#Done' フォルダを作成します。
