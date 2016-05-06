@@ -7,11 +7,11 @@ class Kanban {
 
     function Kanban() {
         $this->patterns = array(
-            "todo"    => "*/#ToDo/[^#]*"  ,
-            "doing"   => "*/#Doing/[^#]*" ,
-            "someday" => "*/#ToDo/#Someday/[^#]*" ,
-            "waiting" => "*/#Doing/#Waiting/[^#]*" ,
-            "done"    => "*/#Done/[^#]*"
+            "todo"    => "*/#ToDo/[!#]*"  ,
+            "doing"   => "*/#Doing/[!#]*" ,
+            "someday" => "*/#ToDo/#Someday/[!#]*" ,
+            "waiting" => "*/#Doing/#Waiting/[!#]*" ,
+            "done"    => "*/#Done/[!#]*"
         );
     }
 

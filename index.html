@@ -14,12 +14,19 @@
 <body>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
+        
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#kanban-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="./">
                 Kanban board
             </a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="kanban-navbar-collapse">
             <p class="navbar-text">担当者:</p>
             <ul class="nav navbar-nav">
                 <li class="dropdown">
@@ -31,8 +38,8 @@
                     </ul>
                 </li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>
 <div class="container-fluid kanban-board">
     <div class="row main-tasks">
@@ -67,43 +74,6 @@
                 Waiting
             </h1>
             <div id="waiting-list" class="row kanban-list"></div>
-        </div>
-    </div>
-</div>
-
-<!-- 詳細ダイアログ -->
-<div class="modal fade" id="propertyModal" tabindex="-1" role="dialog" aria-labelledby="task-title">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="task-title"></h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="task-worker" class="col-sm-2 control-label">担当者:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="task-worker">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="task-status" class="col-sm-2 control-label">状況:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="task-status">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="task-memo" class="col-sm-2 control-label">メモ:</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="task-memo"></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-            </div>
         </div>
     </div>
 </div>

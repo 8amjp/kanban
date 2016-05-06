@@ -35,24 +35,6 @@ body {
 	border-bottom: 1px dotted gainsboro;
 }
 
-#todo-list {
-}
-#doing-list {
-}
-#done-list {
-}
-#someday-list {
-}
-#waiting-list {
-}
-
-#todo-list .kanban,
-#doing-list .kanban,
-#someday-list .kanban,
-#waiting-list .kanban,
-#done-list .kanban {
-}
-
 body {
 	background-color: whitesmoke;
 }
